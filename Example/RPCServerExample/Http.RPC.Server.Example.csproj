@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>RPCServerExample</AssemblyName>
+    <RootNamespace>DA.SI.Core.Http.RPC</RootNamespace>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="commanet.Application" Version="1.1.1" />
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="*">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>  
+  
+  <ItemGroup>
+    <ProjectReference Include="../../Src/RPC.Common/Http.RPC.Common.csproj" />
+    <ProjectReference Include="../../Src/RPC.Server/Http.RPC.Server.csproj" />
+    <ProjectReference Include="../../Src/RPC.Client/Http.RPC.Client.csproj" />
+  </ItemGroup>
+
+</Project>

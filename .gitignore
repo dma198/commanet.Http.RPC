@@ -1,0 +1,9 @@
+*.pdb
+*.dll
+*.cache
+*.swp
+*.nupkg
+*.log
+.vscode/**/*
+**/obj/**/*
+**/bin/**/*

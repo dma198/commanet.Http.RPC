@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>commanet.Http.RPC</id>
+    <version>1.1.1</version>
+    <title>commanet Http RPC library</title>
+    <authors>Dmitry Molodtsov</authors>
+    <owners>Dmitry Molodtsov</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/dma198/commanet.Http.RPC</projectUrl>
+    <license type="expression">MIT</license>
+    <description>Http RPC library</description>
+    <releaseNotes>Release 1</releaseNotes>
+    <copyright>Copyright 2020</copyright>
+    <tags></tags>
+    <dependencies>
+      <group targetFramework="netcoreapp3.1">
+        <dependency id="System.Reflection.Emit" version="4.7.0" />
+        <dependency id="Microsoft.AspNetCore.Server.Kestrel" version="2.2.0" />
+      </group>
+    </dependencies>
+  </metadata>
+
+  <files>
+     <file src="../RPC.Common/bin/release/netcoreapp3.1/commanet.Http.RPC.Common.dll" target="lib/netcoreapp3.1/commanet.Http.RPC.Common.dll"/>
+     <file src="../RPC.Server/bin/release/netcoreapp3.1/commanet.Http.RPC.Server.dll" target="lib/netcoreapp3.1/commanet.Http.RPC.Server.dll"/>
+     <file src="../RPC.Client/bin/release/netcoreapp3.1/commanet.Http.RPC.Client.dll" target="lib/netcoreapp3.1/commanet.Http.RPC.Client.dll"/>
+  </files>
+ 
+</package>

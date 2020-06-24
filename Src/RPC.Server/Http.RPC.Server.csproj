@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>commanet.Http.RPC.Server</AssemblyName>
+    <OutputType>Library</OutputType>
+    <RootNamespace>commanet.Http.RPC</RootNamespace>
+    <Description>HTTP RPC Server</Description>
+    <Product>commanet</Product>
+    <Version>1.0.0.0</Version>
+    <Authors>Dmitry Molodtsov</Authors>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="*">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Server.Kestrel" Version="*" />
+    <PackageReference Include="System.Reflection.Emit" Version="*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RPC.Common\Http.RPC.Common.csproj" />
+  </ItemGroup>
+
+</Project>
